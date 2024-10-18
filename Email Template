@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Template Practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin:0%;
+            background-color: #d8dbdb;
+            padding: 20px;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-size: 18px;
+            color: #565859;
+        }
+
+        .wrapper {
+            background-color: #f6faff;
+            max-width: 700px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px #616e79;
+            border-top:  10px solid #37a28f;
+            border-radius: 5px 5px 10px 10px;
+        }
+        .logo {
+            text-align: center;
+            padding: 1% 0;
+        }
+        .logo img {
+            max-width: 250px;
+        }
+        img {
+            max-width: 100%;
+        }
+        .three-columns {
+            width: 29.3%;
+            padding: 5% 2% 6%;
+            text-align: center;
+            float: left;
+            margin: 15px 0 32px;
+        }
+        .three-columns img{
+            max-width: 135px;
+        }
+        h2 {
+            font-weight: 700;
+            font-size: 28px;
+            letter-spacing: 1px;
+            margin: 20px 0 8px;
+        }
+        p {
+            line-height: 26px;
+            padding-bottom: 15px;
+        }
+        .btn {
+            background-color: #37a28f;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 14px;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            border-radius: 6px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+            transition: .4s;
+        }
+        .btn:hover {
+            background-color: #3db5a0;
+            color: #fff;
+        }
+        hr.orange {
+            border: 1px solid #fe6b58;
+            width: 96%;
+            margin: 15px auto;
+
+        }
+        .two-columns {
+            float: left;
+            width: 46%;
+            padding: 5% 2%;
+            margin: 10px 0 26px;
+        }
+        .two-columns h2 {
+            margin: 0;
+        }
+        ul.social {
+          list-style-type: none;
+          text-align: center;
+          padding: 10px;
+          margin: 20px 0 5px;
+          width: 96%;
+        }
+        ul.social li {
+            display: inline;
+        }
+        .social img{
+            max-width: 40px;
+        }
+        .contact {
+            text-align: center;
+            color: #2b9684;
+            font-weight: 500;
+            line-height: 30px;
+            padding-bottom: 6%;
+        }
+        .contact a {
+            color: #2b9684;
+            text-decoration: none;
+            transition: .2s;
+        }
+        .contact a:hover {
+            color: #fe6b58;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 5px;
+            }
+            .banner{
+                margin-bottom: 20px;
+            }
+            .three-columns, .two-columns {
+                width: 96%;
+                margin: 0 0 35px;
+            }
+            .three-columns img {
+                max-width: 155px;
+            }
+            hr.orange {
+                margin-bottom: 30px;
+            }
+            .two-columns.second{
+                padding-left: 25px;
+                padding-bottom: 30px;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo">
+            <a href="http://example.com" target="_blank">
+                <img src="logo.png" alt="HTML5 Logo" title="Html5 logo"></a>
+
+        </div>
+        <a href="banner.png" target="_blank">
+            <img src="banner.png" alt="Banner" class="banner" title="Banner"></a>
+
+        <div class="three-columns">
+            <a href="mouse.png" target="_blank">
+                <img src="mouse.png" alt="Mouse" class="mouse" title="Mouse"></a>
+                <h2>Email Development</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quam dolores alias ipsa nostrum tempora. Voluptatum facilis ipsum molestiae ipsam illum. Quia culpa atque officia nihil? Temporibus eveniet odio laborum?</p>
+                <div class="button-holder">
+                    <a href="http://example.com" class="btn">Learn More</a>
+                </div>
+        </div>
+        
+        <div class="three-columns">
+            <a href="http://example.com" target="_blank" ><img src="phone.png" alt="Phone" title="Phone"></a>
+            <h2>Mobile Friendly</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In dolorem a placeat, at fuga numquam voluptatem eveniet et cupiditate mollitia, eligendi odit aspernatur sunt culpa iure dolores sapiente! Iure, sequi.</p>
+            <div class="button-holder">
+                <a href="http://example.com" target="_blank" class="btn">HTML Email</a>
+            </div>
+        </div>
+
+        <div class="three-columns">
+            <a href="http://example.com" target="_blank" ><img src="computer.png" alt="Computer" title="Computer"></a>
+            <h2>Desktop Clients</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In dolorem a placeat, at fuga numquam voluptatem eveniet et cupiditate mollitia, eligendi odit aspernatur sunt culpa iure dolores sapiente! Iure, sequi.</p>
+            <div class="button-holder">
+                <a href="http://example.com" target="_blank" class="btn">Development</a>
+            </div>
+        </div>
+
+        <hr class="orange">
+
+         <div class="two-columns">
+            <a href="http://example.com" target="_blank" ><img src="pie-chart.png" alt="Pie Chart" title="Pie Chart"></a>
+
+         </div>
+
+         <div class="two-columns second">
+            <h2>Latest Email Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eum odio vel cumque debitis ex repellendus, aut voluptates sint accusamus unde fuga illo consectetur dolores, porro ratione possimus dicta deserunt?</p>
+            <div class="button-holder"><a href="http://example.com" target="_blank" class="btn">Email Design Course</a></div>
+         </div>
+
+        <hr class="orange">
+
+        <ul class="social">
+            <li><a href="http://example.com" target="_blank" ><img src="facebook.png" alt="Facebook" title="Facebook"></a></li>
+            <li><a href="http://example.com" target="_blank" ><img src="twitter.png" alt="twitter" title="Twitter"></a></li>
+            <li><a href="http://example.com" target="_blank" ><img src="youtube.png" alt="Youtube" title="Youtube"></a></li>
+            <li><a href="http://example.com" target="_blank" ><img src="instagram.png" alt="Instagram" title="Instagram"></a></li>
+            <li><a href="http://example.com" target="_blank" ><img src="linkedin.png" alt="Linkedin" title="Linkedin"></a></li>
+
+        </ul>
+
+        <p class="contact">
+            <a href="http://example.com" target="_blank">www.myportfolio.com</a><br>
+            <a href="tel:+18055555555">11 4004 8922</a><br>
+            <a href="name@myportfolio.com">name@myportfolio.com</a><br>
+            Rua Pascoal Ranieri Mazzilli, 239 - São Paulo - Brasil<br>
+            <a href="http://example.com" target="_blank">Unsubscribe</a> l
+            <a href="http://example.com" target="_blank">Preferences</a><br>
+        </p>
+
+    </div> <!--this is the end of our wrapper-->
+</body>
+</html>
